@@ -8,8 +8,9 @@ The UI is unpolished but functional due to time constraints. However, I am aware
 
 Basic unit tests for the networking layer were added. If the UI were more complex, it could have included Snapshot tests as well.
 
+Evidence
 
-Evidence 
+
 ![Simulator Screen Recording - Clone 1 of iPhone 15 Pro - 2024-05-29 at 20 36 19](https://github.com/ManuelaGomezM/DesafioTecnicoMGM/assets/48629010/bba99a17-94a2-4aa1-8a85-1f58efb98f23)
 
 ![Simulator Screen Recording - Clone 1 of iPhone 15 Pro - 2024-05-29 at 20 36 47](https://github.com/ManuelaGomezM/DesafioTecnicoMGM/assets/48629010/2d1c79c4-8f4d-41e4-9600-94d292f34305)
