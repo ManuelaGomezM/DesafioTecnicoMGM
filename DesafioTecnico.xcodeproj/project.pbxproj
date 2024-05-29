@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		646AE9CA2C06B063005755FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9C92C06B063005755FE /* AppDelegate.swift */; };
+		646AE9CC2C06B063005755FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9CB2C06B063005755FE /* SceneDelegate.swift */; };
+		646AE9CE2C06B063005755FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9CD2C06B063005755FE /* ViewController.swift */; };
+		646AE9D12C06B063005755FE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 646AE9D02C06B063005755FE /* Base */; };
+		646AE9D42C06B063005755FE /* DesafioTecnico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9D22C06B063005755FE /* DesafioTecnico.xcdatamodeld */; };
+		646AE9D62C06B064005755FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646AE9D52C06B064005755FE /* Assets.xcassets */; };
+		646AE9D92C06B064005755FE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 646AE9D82C06B064005755FE /* Base */; };
+		646AE9E42C06B065005755FE /* DesafioTecnicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9E32C06B065005755FE /* DesafioTecnicoTests.swift */; };
+		646AE9EE2C06B065005755FE /* DesafioTecnicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9ED2C06B065005755FE /* DesafioTecnicoUITests.swift */; };
+		646AE9F02C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9EF2C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift */; };
+		646AEA062C06B09F005755FE /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9FC2C06B09F005755FE /* NewsModel.swift */; };
+		646AEA072C06B09F005755FE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9FD2C06B09F005755FE /* NewsViewController.swift */; };
+		646AEA082C06B09F005755FE /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9FE2C06B09F005755FE /* NewsViewModel.swift */; };
+		646AEA092C06B09F005755FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA002C06B09F005755FE /* UserModel.swift */; };
+		646AEA0A2C06B09F005755FE /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA012C06B09F005755FE /* UsersViewController.swift */; };
+		646AEA0B2C06B09F005755FE /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA022C06B09F005755FE /* UserViewModel.swift */; };
+		646AEA0C2C06B09F005755FE /* TabBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA042C06B09F005755FE /* TabBarManager.swift */; };
+		A83D238A2162203A830E5277 /* Pods_DesafioTecnicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D86EA47AC4B07E3BAC9F0C /* Pods_DesafioTecnicoTests.framework */; };
+		B2F5656FE2A02CDBC88246A6 /* Pods_DesafioTecnico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2E31880855567BC899F252 /* Pods_DesafioTecnico.framework */; };
+		CB2BB1F88FF47C07036E6681 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E132887D25C9AA31F60977E7 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		646AE9E02C06B064005755FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 646AE9BE2C06B063005755FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 646AE9C52C06B063005755FE;
+			remoteInfo = DesafioTecnico;
+		};
+		646AE9EA2C06B065005755FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 646AE9BE2C06B063005755FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 646AE9C52C06B063005755FE;
+			remoteInfo = DesafioTecnico;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07693C59883346F89AB25CA7 /* Pods-DesafioTecnicoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTecnicoTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioTecnicoTests/Pods-DesafioTecnicoTests.release.xcconfig"; sourceTree = "<group>"; };
+		11D86EA47AC4B07E3BAC9F0C /* Pods_DesafioTecnicoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTecnicoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		581E8B9D6ACAC9CEB5AB41EA /* Pods-DesafioTecnico-DesafioTecnicoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTecnico-DesafioTecnicoUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTecnico-DesafioTecnicoUITests/Pods-DesafioTecnico-DesafioTecnicoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		646AE9C62C06B063005755FE /* DesafioTecnico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioTecnico.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		646AE9C92C06B063005755FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		646AE9CB2C06B063005755FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		646AE9CD2C06B063005755FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		646AE9D02C06B063005755FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		646AE9D32C06B063005755FE /* DesafioTecnico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesafioTecnico.xcdatamodel; sourceTree = "<group>"; };
+		646AE9D52C06B064005755FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		646AE9D82C06B064005755FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		646AE9DA2C06B064005755FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		646AE9DF2C06B064005755FE /* DesafioTecnicoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTecnicoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		646AE9E32C06B065005755FE /* DesafioTecnicoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTecnicoTests.swift; sourceTree = "<group>"; };
+		646AE9E92C06B065005755FE /* DesafioTecnicoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTecnicoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		646AE9ED2C06B065005755FE /* DesafioTecnicoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTecnicoUITests.swift; sourceTree = "<group>"; };
+		646AE9EF2C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTecnicoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		646AE9FC2C06B09F005755FE /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		646AE9FD2C06B09F005755FE /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		646AE9FE2C06B09F005755FE /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		646AEA002C06B09F005755FE /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		646AEA012C06B09F005755FE /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		646AEA022C06B09F005755FE /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		646AEA042C06B09F005755FE /* TabBarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarManager.swift; sourceTree = "<group>"; };
+		848204BBFE0D8B34A5D62E10 /* Pods-DesafioTecnico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTecnico.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTecnico/Pods-DesafioTecnico.debug.xcconfig"; sourceTree = "<group>"; };
+		9D20E23296ABDA8FC173E830 /* Pods-DesafioTecnico-DesafioTecnicoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTecnico-DesafioTecnicoUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafioTecnico-DesafioTecnicoUITests/Pods-DesafioTecnico-DesafioTecnicoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D7E0B0E283F044E084D8560 /* Pods-DesafioTecnico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTecnico.release.xcconfig"; path = "Target Support Files/Pods-DesafioTecnico/Pods-DesafioTecnico.release.xcconfig"; sourceTree = "<group>"; };
+		AB2E31880855567BC899F252 /* Pods_DesafioTecnico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTecnico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E132887D25C9AA31F60977E7 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioTecnico_DesafioTecnicoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F1D15A5F80E43C3524335B /* Pods-DesafioTecnicoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTecnicoTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTecnicoTests/Pods-DesafioTecnicoTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		646AE9C32C06B063005755FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2F5656FE2A02CDBC88246A6 /* Pods_DesafioTecnico.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646AE9DC2C06B064005755FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A83D238A2162203A830E5277 /* Pods_DesafioTecnicoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646AE9E62C06B065005755FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2BB1F88FF47C07036E6681 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		646AE9BD2C06B063005755FE = {
+			isa = PBXGroup;
+			children = (
+				646AE9C82C06B063005755FE /* DesafioTecnico */,
+				646AE9E22C06B064005755FE /* DesafioTecnicoTests */,
+				646AE9EC2C06B065005755FE /* DesafioTecnicoUITests */,
+				646AE9C72C06B063005755FE /* Products */,
+				BEF116FB913046A112F2F9A8 /* Pods */,
+				6486AC9E4FD17A567325CC88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		646AE9C72C06B063005755FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				646AE9C62C06B063005755FE /* DesafioTecnico.app */,
+				646AE9DF2C06B064005755FE /* DesafioTecnicoTests.xctest */,
+				646AE9E92C06B065005755FE /* DesafioTecnicoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		646AE9C82C06B063005755FE /* DesafioTecnico */ = {
+			isa = PBXGroup;
+			children = (
+				646AEA052C06B09F005755FE /* Modules */,
+				646AE9C92C06B063005755FE /* AppDelegate.swift */,
+				646AE9CB2C06B063005755FE /* SceneDelegate.swift */,
+				646AE9CD2C06B063005755FE /* ViewController.swift */,
+				646AE9CF2C06B063005755FE /* Main.storyboard */,
+				646AE9D52C06B064005755FE /* Assets.xcassets */,
+				646AE9D72C06B064005755FE /* LaunchScreen.storyboard */,
+				646AE9DA2C06B064005755FE /* Info.plist */,
+				646AE9D22C06B063005755FE /* DesafioTecnico.xcdatamodeld */,
+			);
+			path = DesafioTecnico;
+			sourceTree = "<group>";
+		};
+		646AE9E22C06B064005755FE /* DesafioTecnicoTests */ = {
+			isa = PBXGroup;
+			children = (
+				646AE9E32C06B065005755FE /* DesafioTecnicoTests.swift */,
+			);
+			path = DesafioTecnicoTests;
+			sourceTree = "<group>";
+		};
+		646AE9EC2C06B065005755FE /* DesafioTecnicoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				646AE9ED2C06B065005755FE /* DesafioTecnicoUITests.swift */,
+				646AE9EF2C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift */,
+			);
+			path = DesafioTecnicoUITests;
+			sourceTree = "<group>";
+		};
+		646AE9FF2C06B09F005755FE /* NewsModule */ = {
+			isa = PBXGroup;
+			children = (
+				646AE9FC2C06B09F005755FE /* NewsModel.swift */,
+				646AE9FD2C06B09F005755FE /* NewsViewController.swift */,
+				646AE9FE2C06B09F005755FE /* NewsViewModel.swift */,
+			);
+			path = NewsModule;
+			sourceTree = "<group>";
+		};
+		646AEA032C06B09F005755FE /* UsersModule */ = {
+			isa = PBXGroup;
+			children = (
+				646AEA002C06B09F005755FE /* UserModel.swift */,
+				646AEA012C06B09F005755FE /* UsersViewController.swift */,
+				646AEA022C06B09F005755FE /* UserViewModel.swift */,
+			);
+			path = UsersModule;
+			sourceTree = "<group>";
+		};
+		646AEA052C06B09F005755FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				646AE9FF2C06B09F005755FE /* NewsModule */,
+				646AEA032C06B09F005755FE /* UsersModule */,
+				646AEA042C06B09F005755FE /* TabBarManager.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6486AC9E4FD17A567325CC88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB2E31880855567BC899F252 /* Pods_DesafioTecnico.framework */,
+				E132887D25C9AA31F60977E7 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework */,
+				11D86EA47AC4B07E3BAC9F0C /* Pods_DesafioTecnicoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEF116FB913046A112F2F9A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				848204BBFE0D8B34A5D62E10 /* Pods-DesafioTecnico.debug.xcconfig */,
+				9D7E0B0E283F044E084D8560 /* Pods-DesafioTecnico.release.xcconfig */,
+				581E8B9D6ACAC9CEB5AB41EA /* Pods-DesafioTecnico-DesafioTecnicoUITests.debug.xcconfig */,
+				9D20E23296ABDA8FC173E830 /* Pods-DesafioTecnico-DesafioTecnicoUITests.release.xcconfig */,
+				F2F1D15A5F80E43C3524335B /* Pods-DesafioTecnicoTests.debug.xcconfig */,
+				07693C59883346F89AB25CA7 /* Pods-DesafioTecnicoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		646AE9C52C06B063005755FE /* DesafioTecnico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646AE9F32C06B065005755FE /* Build configuration list for PBXNativeTarget "DesafioTecnico" */;
+			buildPhases = (
+				60237D2E1D7BD15A9C61B22D /* [CP] Check Pods Manifest.lock */,
+				646AE9C22C06B063005755FE /* Sources */,
+				646AE9C32C06B063005755FE /* Frameworks */,
+				646AE9C42C06B063005755FE /* Resources */,
+				E7ED47331ADD2721B02AE204 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioTecnico;
+			productName = DesafioTecnico;
+			productReference = 646AE9C62C06B063005755FE /* DesafioTecnico.app */;
+			productType = "com.apple.product-type.application";
+		};
+		646AE9DE2C06B064005755FE /* DesafioTecnicoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646AE9F62C06B065005755FE /* Build configuration list for PBXNativeTarget "DesafioTecnicoTests" */;
+			buildPhases = (
+				BF97B387BD7A4FA898FFD3E9 /* [CP] Check Pods Manifest.lock */,
+				646AE9DB2C06B064005755FE /* Sources */,
+				646AE9DC2C06B064005755FE /* Frameworks */,
+				646AE9DD2C06B064005755FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				646AE9E12C06B064005755FE /* PBXTargetDependency */,
+			);
+			name = DesafioTecnicoTests;
+			productName = DesafioTecnicoTests;
+			productReference = 646AE9DF2C06B064005755FE /* DesafioTecnicoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		646AE9E82C06B065005755FE /* DesafioTecnicoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646AE9F92C06B065005755FE /* Build configuration list for PBXNativeTarget "DesafioTecnicoUITests" */;
+			buildPhases = (
+				7584FC5AF9500D81C7CA6B17 /* [CP] Check Pods Manifest.lock */,
+				646AE9E52C06B065005755FE /* Sources */,
+				646AE9E62C06B065005755FE /* Frameworks */,
+				646AE9E72C06B065005755FE /* Resources */,
+				C9ED271A0283D0BB6366F0AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				646AE9EB2C06B065005755FE /* PBXTargetDependency */,
+			);
+			name = DesafioTecnicoUITests;
+			productName = DesafioTecnicoUITests;
+			productReference = 646AE9E92C06B065005755FE /* DesafioTecnicoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		646AE9BE2C06B063005755FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					646AE9C52C06B063005755FE = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					646AE9DE2C06B064005755FE = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 646AE9C52C06B063005755FE;
+					};
+					646AE9E82C06B065005755FE = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 646AE9C52C06B063005755FE;
+					};
+				};
+			};
+			buildConfigurationList = 646AE9C12C06B063005755FE /* Build configuration list for PBXProject "DesafioTecnico" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 646AE9BD2C06B063005755FE;
+			productRefGroup = 646AE9C72C06B063005755FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				646AE9C52C06B063005755FE /* DesafioTecnico */,
+				646AE9DE2C06B064005755FE /* DesafioTecnicoTests */,
+				646AE9E82C06B065005755FE /* DesafioTecnicoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		646AE9C42C06B063005755FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				646AE9D62C06B064005755FE /* Assets.xcassets in Resources */,
+				646AE9D92C06B064005755FE /* Base in Resources */,
+				646AE9D12C06B063005755FE /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646AE9DD2C06B064005755FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646AE9E72C06B065005755FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		60237D2E1D7BD15A9C61B22D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioTecnico-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7584FC5AF9500D81C7CA6B17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioTecnico-DesafioTecnicoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF97B387BD7A4FA898FFD3E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioTecnicoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9ED271A0283D0BB6366F0AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioTecnico-DesafioTecnicoUITests/Pods-DesafioTecnico-DesafioTecnicoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioTecnico-DesafioTecnicoUITests/Pods-DesafioTecnico-DesafioTecnicoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioTecnico-DesafioTecnicoUITests/Pods-DesafioTecnico-DesafioTecnicoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7ED47331ADD2721B02AE204 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioTecnico/Pods-DesafioTecnico-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioTecnico/Pods-DesafioTecnico-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioTecnico/Pods-DesafioTecnico-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		646AE9C22C06B063005755FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				646AE9CE2C06B063005755FE /* ViewController.swift in Sources */,
+				646AE9CA2C06B063005755FE /* AppDelegate.swift in Sources */,
+				646AEA092C06B09F005755FE /* UserModel.swift in Sources */,
+				646AEA0B2C06B09F005755FE /* UserViewModel.swift in Sources */,
+				646AE9CC2C06B063005755FE /* SceneDelegate.swift in Sources */,
+				646AEA0C2C06B09F005755FE /* TabBarManager.swift in Sources */,
+				646AEA072C06B09F005755FE /* NewsViewController.swift in Sources */,
+				646AEA082C06B09F005755FE /* NewsViewModel.swift in Sources */,
+				646AE9D42C06B063005755FE /* DesafioTecnico.xcdatamodeld in Sources */,
+				646AEA0A2C06B09F005755FE /* UsersViewController.swift in Sources */,
+				646AEA062C06B09F005755FE /* NewsModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646AE9DB2C06B064005755FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				646AE9E42C06B065005755FE /* DesafioTecnicoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646AE9E52C06B065005755FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				646AE9F02C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift in Sources */,
+				646AE9EE2C06B065005755FE /* DesafioTecnicoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		646AE9E12C06B064005755FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 646AE9C52C06B063005755FE /* DesafioTecnico */;
+			targetProxy = 646AE9E02C06B064005755FE /* PBXContainerItemProxy */;
+		};
+		646AE9EB2C06B065005755FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 646AE9C52C06B063005755FE /* DesafioTecnico */;
+			targetProxy = 646AE9EA2C06B065005755FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		646AE9CF2C06B063005755FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				646AE9D02C06B063005755FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		646AE9D72C06B064005755FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				646AE9D82C06B064005755FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		646AE9F12C06B065005755FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		646AE9F22C06B065005755FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		646AE9F42C06B065005755FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 848204BBFE0D8B34A5D62E10 /* Pods-DesafioTecnico.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5A5P67N3VM;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesafioTecnico/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ManuelaGomezMartin.DesafioTecnico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		646AE9F52C06B065005755FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D7E0B0E283F044E084D8560 /* Pods-DesafioTecnico.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5A5P67N3VM;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesafioTecnico/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ManuelaGomezMartin.DesafioTecnico;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		646AE9F72C06B065005755FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F1D15A5F80E43C3524335B /* Pods-DesafioTecnicoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5A5P67N3VM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ManuelaGomezMartin.DesafioTecnicoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioTecnico.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DesafioTecnico";
+			};
+			name = Debug;
+		};
+		646AE9F82C06B065005755FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07693C59883346F89AB25CA7 /* Pods-DesafioTecnicoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5A5P67N3VM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ManuelaGomezMartin.DesafioTecnicoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioTecnico.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DesafioTecnico";
+			};
+			name = Release;
+		};
+		646AE9FA2C06B065005755FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 581E8B9D6ACAC9CEB5AB41EA /* Pods-DesafioTecnico-DesafioTecnicoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5A5P67N3VM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ManuelaGomezMartin.DesafioTecnicoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioTecnico;
+			};
+			name = Debug;
+		};
+		646AE9FB2C06B065005755FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D20E23296ABDA8FC173E830 /* Pods-DesafioTecnico-DesafioTecnicoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5A5P67N3VM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ManuelaGomezMartin.DesafioTecnicoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioTecnico;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		646AE9C12C06B063005755FE /* Build configuration list for PBXProject "DesafioTecnico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646AE9F12C06B065005755FE /* Debug */,
+				646AE9F22C06B065005755FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646AE9F32C06B065005755FE /* Build configuration list for PBXNativeTarget "DesafioTecnico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646AE9F42C06B065005755FE /* Debug */,
+				646AE9F52C06B065005755FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646AE9F62C06B065005755FE /* Build configuration list for PBXNativeTarget "DesafioTecnicoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646AE9F72C06B065005755FE /* Debug */,
+				646AE9F82C06B065005755FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646AE9F92C06B065005755FE /* Build configuration list for PBXNativeTarget "DesafioTecnicoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646AE9FA2C06B065005755FE /* Debug */,
+				646AE9FB2C06B065005755FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		646AE9D22C06B063005755FE /* DesafioTecnico.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				646AE9D32C06B063005755FE /* DesafioTecnico.xcdatamodel */,
+			);
+			currentVersion = 646AE9D32C06B063005755FE /* DesafioTecnico.xcdatamodel */;
+			path = DesafioTecnico.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 646AE9BE2C06B063005755FE /* Project object */;
+}
