@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import GoogleMaps
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        GMSServices.setMetalRendererEnabled(true)
+        GMSServices.provideAPIKey("AIzaSyD2vfIAMvSw4DlgreHdQgCfgoIp8YDBCw4")
         return true
     }
 

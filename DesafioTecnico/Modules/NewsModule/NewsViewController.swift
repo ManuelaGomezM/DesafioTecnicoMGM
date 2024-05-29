@@ -9,8 +9,12 @@ import Foundation
 import UIKit
 import Combine
 
-class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
-    private let viewModel = NewsViewModel()
+protocol NewsVCProtocol {
+    var viewModel: NewsViewModel { get set }
+}
+
+final class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, NewsVCProtocol {
+    var viewModel = NewsViewModel()
     private var cancellables: Set<AnyCancellable> = []
     private let tableView = UITableView()
     private let searchBar = UISearchBar()

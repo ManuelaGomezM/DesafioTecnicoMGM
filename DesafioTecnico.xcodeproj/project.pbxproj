@@ -14,9 +14,6 @@
 		646AE9D42C06B063005755FE /* DesafioTecnico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9D22C06B063005755FE /* DesafioTecnico.xcdatamodeld */; };
 		646AE9D62C06B064005755FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646AE9D52C06B064005755FE /* Assets.xcassets */; };
 		646AE9D92C06B064005755FE /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 646AE9D82C06B064005755FE /* Base */; };
-		646AE9E42C06B065005755FE /* DesafioTecnicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9E32C06B065005755FE /* DesafioTecnicoTests.swift */; };
-		646AE9EE2C06B065005755FE /* DesafioTecnicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9ED2C06B065005755FE /* DesafioTecnicoUITests.swift */; };
-		646AE9F02C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9EF2C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift */; };
 		646AEA062C06B09F005755FE /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9FC2C06B09F005755FE /* NewsModel.swift */; };
 		646AEA072C06B09F005755FE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9FD2C06B09F005755FE /* NewsViewController.swift */; };
 		646AEA082C06B09F005755FE /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AE9FE2C06B09F005755FE /* NewsViewModel.swift */; };
@@ -25,11 +22,15 @@
 		646AEA0B2C06B09F005755FE /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA022C06B09F005755FE /* UserViewModel.swift */; };
 		646AEA0C2C06B09F005755FE /* TabBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA042C06B09F005755FE /* TabBarManager.swift */; };
 		646AEA0F2C076358005755FE /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA0E2C076358005755FE /* NewsDetailViewController.swift */; };
-		646AEA112C07636C005755FE /* NewsDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA102C07636C005755FE /* NewsDetailModel.swift */; };
 		646AEA132C07637C005755FE /* NewsDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA122C07637C005755FE /* NewsDetailViewModel.swift */; };
 		646AEA162C0763C5005755FE /* UserLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA152C0763C5005755FE /* UserLocationModel.swift */; };
 		646AEA182C0763D3005755FE /* UserLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA172C0763D3005755FE /* UserLocationViewController.swift */; };
 		646AEA1A2C0763E2005755FE /* UserLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA192C0763E2005755FE /* UserLocationViewModel.swift */; };
+		646AEA1C2C07A224005755FE /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA1B2C07A224005755FE /* NewsService.swift */; };
+		646AEA1E2C07D14D005755FE /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA1D2C07D14D005755FE /* UserService.swift */; };
+		646AEA202C07E894005755FE /* NetworkingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA1F2C07E894005755FE /* NetworkingErrors.swift */; };
+		646AEA222C07EAF5005755FE /* UserServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA212C07EAF5005755FE /* UserServiceTest.swift */; };
+		646AEA242C07ECEF005755FE /* NewsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA232C07ECEF005755FE /* NewsServiceTest.swift */; };
 		A83D238A2162203A830E5277 /* Pods_DesafioTecnicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D86EA47AC4B07E3BAC9F0C /* Pods_DesafioTecnicoTests.framework */; };
 		B2F5656FE2A02CDBC88246A6 /* Pods_DesafioTecnico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2E31880855567BC899F252 /* Pods_DesafioTecnico.framework */; };
 		CB2BB1F88FF47C07036E6681 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E132887D25C9AA31F60977E7 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework */; };
@@ -66,10 +67,7 @@
 		646AE9D82C06B064005755FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646AE9DA2C06B064005755FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		646AE9DF2C06B064005755FE /* DesafioTecnicoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTecnicoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		646AE9E32C06B065005755FE /* DesafioTecnicoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTecnicoTests.swift; sourceTree = "<group>"; };
 		646AE9E92C06B065005755FE /* DesafioTecnicoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTecnicoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		646AE9ED2C06B065005755FE /* DesafioTecnicoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTecnicoUITests.swift; sourceTree = "<group>"; };
-		646AE9EF2C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTecnicoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		646AE9FC2C06B09F005755FE /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		646AE9FD2C06B09F005755FE /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		646AE9FE2C06B09F005755FE /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
@@ -78,11 +76,15 @@
 		646AEA022C06B09F005755FE /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		646AEA042C06B09F005755FE /* TabBarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarManager.swift; sourceTree = "<group>"; };
 		646AEA0E2C076358005755FE /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
-		646AEA102C07636C005755FE /* NewsDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailModel.swift; sourceTree = "<group>"; };
 		646AEA122C07637C005755FE /* NewsDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewModel.swift; sourceTree = "<group>"; };
 		646AEA152C0763C5005755FE /* UserLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationModel.swift; sourceTree = "<group>"; };
 		646AEA172C0763D3005755FE /* UserLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationViewController.swift; sourceTree = "<group>"; };
 		646AEA192C0763E2005755FE /* UserLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationViewModel.swift; sourceTree = "<group>"; };
+		646AEA1B2C07A224005755FE /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		646AEA1D2C07D14D005755FE /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		646AEA1F2C07E894005755FE /* NetworkingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingErrors.swift; sourceTree = "<group>"; };
+		646AEA212C07EAF5005755FE /* UserServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceTest.swift; sourceTree = "<group>"; };
+		646AEA232C07ECEF005755FE /* NewsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsServiceTest.swift; sourceTree = "<group>"; };
 		848204BBFE0D8B34A5D62E10 /* Pods-DesafioTecnico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTecnico.debug.xcconfig"; path = "Target Support Files/Pods-DesafioTecnico/Pods-DesafioTecnico.debug.xcconfig"; sourceTree = "<group>"; };
 		9D20E23296ABDA8FC173E830 /* Pods-DesafioTecnico-DesafioTecnicoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTecnico-DesafioTecnicoUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafioTecnico-DesafioTecnicoUITests/Pods-DesafioTecnico-DesafioTecnicoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9D7E0B0E283F044E084D8560 /* Pods-DesafioTecnico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioTecnico.release.xcconfig"; path = "Target Support Files/Pods-DesafioTecnico/Pods-DesafioTecnico.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +126,6 @@
 			children = (
 				646AE9C82C06B063005755FE /* DesafioTecnico */,
 				646AE9E22C06B064005755FE /* DesafioTecnicoTests */,
-				646AE9EC2C06B065005755FE /* DesafioTecnicoUITests */,
 				646AE9C72C06B063005755FE /* Products */,
 				BEF116FB913046A112F2F9A8 /* Pods */,
 				6486AC9E4FD17A567325CC88 /* Frameworks */,
@@ -160,18 +161,10 @@
 		646AE9E22C06B064005755FE /* DesafioTecnicoTests */ = {
 			isa = PBXGroup;
 			children = (
-				646AE9E32C06B065005755FE /* DesafioTecnicoTests.swift */,
+				646AEA212C07EAF5005755FE /* UserServiceTest.swift */,
+				646AEA232C07ECEF005755FE /* NewsServiceTest.swift */,
 			);
 			path = DesafioTecnicoTests;
-			sourceTree = "<group>";
-		};
-		646AE9EC2C06B065005755FE /* DesafioTecnicoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				646AE9ED2C06B065005755FE /* DesafioTecnicoUITests.swift */,
-				646AE9EF2C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift */,
-			);
-			path = DesafioTecnicoUITests;
 			sourceTree = "<group>";
 		};
 		646AE9FF2C06B09F005755FE /* NewsModule */ = {
@@ -180,6 +173,7 @@
 				646AE9FC2C06B09F005755FE /* NewsModel.swift */,
 				646AE9FD2C06B09F005755FE /* NewsViewController.swift */,
 				646AE9FE2C06B09F005755FE /* NewsViewModel.swift */,
+				646AEA1B2C07A224005755FE /* NewsService.swift */,
 			);
 			path = NewsModule;
 			sourceTree = "<group>";
@@ -190,6 +184,7 @@
 				646AEA002C06B09F005755FE /* UserModel.swift */,
 				646AEA012C06B09F005755FE /* UsersViewController.swift */,
 				646AEA022C06B09F005755FE /* UserViewModel.swift */,
+				646AEA1D2C07D14D005755FE /* UserService.swift */,
 			);
 			path = UsersModule;
 			sourceTree = "<group>";
@@ -202,6 +197,7 @@
 				646AE9FF2C06B09F005755FE /* NewsModule */,
 				646AEA032C06B09F005755FE /* UsersModule */,
 				646AEA042C06B09F005755FE /* TabBarManager.swift */,
+				646AEA1F2C07E894005755FE /* NetworkingErrors.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -210,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				646AEA0E2C076358005755FE /* NewsDetailViewController.swift */,
-				646AEA102C07636C005755FE /* NewsDetailModel.swift */,
 				646AEA122C07637C005755FE /* NewsDetailViewModel.swift */,
 			);
 			path = NewsDetailModule;
@@ -325,6 +320,7 @@
 					};
 					646AE9DE2C06B064005755FE = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 646AE9C52C06B063005755FE;
 					};
 					646AE9E82C06B065005755FE = {
@@ -491,15 +487,17 @@
 				646AEA132C07637C005755FE /* NewsDetailViewModel.swift in Sources */,
 				646AEA0F2C076358005755FE /* NewsDetailViewController.swift in Sources */,
 				646AE9CE2C06B063005755FE /* ViewController.swift in Sources */,
+				646AEA202C07E894005755FE /* NetworkingErrors.swift in Sources */,
 				646AEA1A2C0763E2005755FE /* UserLocationViewModel.swift in Sources */,
 				646AE9CA2C06B063005755FE /* AppDelegate.swift in Sources */,
 				646AEA182C0763D3005755FE /* UserLocationViewController.swift in Sources */,
 				646AEA092C06B09F005755FE /* UserModel.swift in Sources */,
 				646AEA0B2C06B09F005755FE /* UserViewModel.swift in Sources */,
 				646AE9CC2C06B063005755FE /* SceneDelegate.swift in Sources */,
-				646AEA112C07636C005755FE /* NewsDetailModel.swift in Sources */,
 				646AEA0C2C06B09F005755FE /* TabBarManager.swift in Sources */,
 				646AEA072C06B09F005755FE /* NewsViewController.swift in Sources */,
+				646AEA1C2C07A224005755FE /* NewsService.swift in Sources */,
+				646AEA1E2C07D14D005755FE /* UserService.swift in Sources */,
 				646AEA082C06B09F005755FE /* NewsViewModel.swift in Sources */,
 				646AEA162C0763C5005755FE /* UserLocationModel.swift in Sources */,
 				646AE9D42C06B063005755FE /* DesafioTecnico.xcdatamodeld in Sources */,
@@ -512,7 +510,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646AE9E42C06B065005755FE /* DesafioTecnicoTests.swift in Sources */,
+				646AEA242C07ECEF005755FE /* NewsServiceTest.swift in Sources */,
+				646AEA222C07EAF5005755FE /* UserServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,8 +519,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646AE9F02C06B065005755FE /* DesafioTecnicoUITestsLaunchTests.swift in Sources */,
-				646AE9EE2C06B065005755FE /* DesafioTecnicoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +742,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5A5P67N3VM;
@@ -754,6 +752,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ManuelaGomezMartin.DesafioTecnicoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioTecnico.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DesafioTecnico";
@@ -766,6 +765,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5A5P67N3VM;

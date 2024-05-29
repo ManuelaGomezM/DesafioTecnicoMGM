@@ -7,9 +7,9 @@
 
 import Foundation
 
-class NewsDetailViewModel {
+struct NewsDetailViewModel {
     let news: News
-
+    
     init(news: News) {
         self.news = news
     }

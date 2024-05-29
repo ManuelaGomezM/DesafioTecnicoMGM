@@ -9,18 +9,26 @@ import Foundation
 import Combine
 import CoreLocation
 
-
-final public class HomeViewModel: ObservableObject {
+final public class UserViewModel: ObservableObject {
     @Published var users: [User] = []
-
-    init() {
+    private let userService: UserService
+    
+    init(userService: UserService = UserService()) {
+        self.userService = userService
         loadUsers()
     }
-
+    
+    
     func loadUsers() {
-        users = [
-            User(userName: "User 1", location: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194)),
-            User(userName: "User 2", location: CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437)),
-        ]
+        userService.getUsers { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let fetchedUsers):
+                    self?.users = fetchedUsers
+                case .failure(let error):
+                    print("Failed to fetch users: \(error)")
+                }
+            }
+        }
     }
 }

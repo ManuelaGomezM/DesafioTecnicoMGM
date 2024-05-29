@@ -9,9 +9,12 @@ import Foundation
 import Combine
 import UIKit
 
-class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    private let viewModel = HomeViewModel()
+protocol UsersVCProtocol {
+    var viewModel: UserViewModel { get set }
+}
+
+final class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UsersVCProtocol {
+    var viewModel = UserViewModel()
     private let tableView = UITableView()
     private var cancellables: Set<AnyCancellable> = []
     
@@ -51,7 +54,8 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
-        cell.textLabel?.text = viewModel.users[indexPath.row].userName
+        let userInfo = viewModel.users[indexPath.row]
+        cell.textLabel?.text = "\(userInfo.firstname) \(userInfo.lastname)"
         return cell
     }
     
