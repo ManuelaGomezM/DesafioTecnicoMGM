@@ -24,7 +24,7 @@ class NewsServiceTests: XCTestCase {
         service.getNews { result in
             switch result {
             case .success(let news):
-                XCTAssertEqual(news.count, 30)
+                XCTAssertEqual(news.count, 100)
             case .failure:
                 XCTFail("Fallo. Resultado no esperado")
             }

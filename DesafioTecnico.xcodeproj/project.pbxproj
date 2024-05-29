@@ -33,18 +33,10 @@
 		646AEA242C07ECEF005755FE /* NewsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646AEA232C07ECEF005755FE /* NewsServiceTest.swift */; };
 		A83D238A2162203A830E5277 /* Pods_DesafioTecnicoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11D86EA47AC4B07E3BAC9F0C /* Pods_DesafioTecnicoTests.framework */; };
 		B2F5656FE2A02CDBC88246A6 /* Pods_DesafioTecnico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2E31880855567BC899F252 /* Pods_DesafioTecnico.framework */; };
-		CB2BB1F88FF47C07036E6681 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E132887D25C9AA31F60977E7 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		646AE9E02C06B064005755FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 646AE9BE2C06B063005755FE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 646AE9C52C06B063005755FE;
-			remoteInfo = DesafioTecnico;
-		};
-		646AE9EA2C06B065005755FE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 646AE9BE2C06B063005755FE /* Project object */;
 			proxyType = 1;
@@ -67,7 +59,6 @@
 		646AE9D82C06B064005755FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646AE9DA2C06B064005755FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		646AE9DF2C06B064005755FE /* DesafioTecnicoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTecnicoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		646AE9E92C06B065005755FE /* DesafioTecnicoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTecnicoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		646AE9FC2C06B09F005755FE /* NewsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		646AE9FD2C06B09F005755FE /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		646AE9FE2C06B09F005755FE /* NewsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
@@ -110,14 +101,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		646AE9E62C06B065005755FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB2BB1F88FF47C07036E6681 /* Pods_DesafioTecnico_DesafioTecnicoUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -137,7 +120,6 @@
 			children = (
 				646AE9C62C06B063005755FE /* DesafioTecnico.app */,
 				646AE9DF2C06B064005755FE /* DesafioTecnicoTests.xctest */,
-				646AE9E92C06B065005755FE /* DesafioTecnicoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,26 +267,6 @@
 			productReference = 646AE9DF2C06B064005755FE /* DesafioTecnicoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		646AE9E82C06B065005755FE /* DesafioTecnicoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 646AE9F92C06B065005755FE /* Build configuration list for PBXNativeTarget "DesafioTecnicoUITests" */;
-			buildPhases = (
-				7584FC5AF9500D81C7CA6B17 /* [CP] Check Pods Manifest.lock */,
-				646AE9E52C06B065005755FE /* Sources */,
-				646AE9E62C06B065005755FE /* Frameworks */,
-				646AE9E72C06B065005755FE /* Resources */,
-				C9ED271A0283D0BB6366F0AF /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				646AE9EB2C06B065005755FE /* PBXTargetDependency */,
-			);
-			name = DesafioTecnicoUITests;
-			productName = DesafioTecnicoUITests;
-			productReference = 646AE9E92C06B065005755FE /* DesafioTecnicoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -321,10 +283,6 @@
 					646AE9DE2C06B064005755FE = {
 						CreatedOnToolsVersion = 15.4;
 						LastSwiftMigration = 1540;
-						TestTargetID = 646AE9C52C06B063005755FE;
-					};
-					646AE9E82C06B065005755FE = {
-						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 646AE9C52C06B063005755FE;
 					};
 				};
@@ -344,7 +302,6 @@
 			targets = (
 				646AE9C52C06B063005755FE /* DesafioTecnico */,
 				646AE9DE2C06B064005755FE /* DesafioTecnicoTests */,
-				646AE9E82C06B065005755FE /* DesafioTecnicoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -361,13 +318,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		646AE9DD2C06B064005755FE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		646AE9E72C06B065005755FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,28 +349,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7584FC5AF9500D81C7CA6B17 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DesafioTecnico-DesafioTecnicoUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BF97B387BD7A4FA898FFD3E9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,23 +369,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C9ED271A0283D0BB6366F0AF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioTecnico-DesafioTecnicoUITests/Pods-DesafioTecnico-DesafioTecnicoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DesafioTecnico-DesafioTecnicoUITests/Pods-DesafioTecnico-DesafioTecnicoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioTecnico-DesafioTecnicoUITests/Pods-DesafioTecnico-DesafioTecnicoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E7ED47331ADD2721B02AE204 /* [CP] Copy Pods Resources */ = {
@@ -515,13 +426,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		646AE9E52C06B065005755FE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -529,11 +433,6 @@
 			isa = PBXTargetDependency;
 			target = 646AE9C52C06B063005755FE /* DesafioTecnico */;
 			targetProxy = 646AE9E02C06B064005755FE /* PBXContainerItemProxy */;
-		};
-		646AE9EB2C06B065005755FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 646AE9C52C06B063005755FE /* DesafioTecnico */;
-			targetProxy = 646AE9EA2C06B065005755FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -746,6 +645,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5A5P67N3VM;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -769,6 +669,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5A5P67N3VM;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
@@ -778,44 +679,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioTecnico.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DesafioTecnico";
-			};
-			name = Release;
-		};
-		646AE9FA2C06B065005755FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 581E8B9D6ACAC9CEB5AB41EA /* Pods-DesafioTecnico-DesafioTecnicoUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5A5P67N3VM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ManuelaGomezMartin.DesafioTecnicoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioTecnico;
-			};
-			name = Debug;
-		};
-		646AE9FB2C06B065005755FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D20E23296ABDA8FC173E830 /* Pods-DesafioTecnico-DesafioTecnicoUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5A5P67N3VM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ManuelaGomezMartin.DesafioTecnicoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DesafioTecnico;
 			};
 			name = Release;
 		};
@@ -845,15 +708,6 @@
 			buildConfigurations = (
 				646AE9F72C06B065005755FE /* Debug */,
 				646AE9F82C06B065005755FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		646AE9F92C06B065005755FE /* Build configuration list for PBXNativeTarget "DesafioTecnicoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				646AE9FA2C06B065005755FE /* Debug */,
-				646AE9FB2C06B065005755FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
