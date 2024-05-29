@@ -57,9 +57,9 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedUser = viewModel.users[indexPath.row]
-       // let mapViewModel = UserMapViewModel(user: selectedUser)
-       // let mapVC = UserMapViewController(viewModel: mapViewModel)
-       // navigationController?.pushViewController(mapVC, animated: true)
+        let mapViewModel = UserLocationViewModel(user: selectedUser)
+        let mapVC = UserLocationViewController(viewModel: mapViewModel)
+        navigationController?.pushViewController(mapVC, animated: true)
     }
 }
 

@@ -11,9 +11,12 @@ import Combine
 class NewsViewModel: ObservableObject {
     @Published var news: [News] = []
     @Published var searchText: String = ""
+    
+    private var cancellables: Set<AnyCancellable> = []
 
     init() {
         loadNews()
+        searchNews()
     }
 
     func loadNews() {
@@ -23,12 +26,16 @@ class NewsViewModel: ObservableObject {
         ]
     }
 
-    var filteredNews: [News] {
-        if searchText.isEmpty {
-            return news
-        } else {
-            return news.filter { $0.title.contains(searchText)}
-        }
+    private func searchNews() {
+        $searchText
+            .combineLatest($news)
+            .map { searchText, news in
+                guard !searchText.isEmpty else { return news }
+                return news.filter { $0.title.contains(searchText) }
+            }
+            .assign(to: &$filteredNews)
     }
+    
+    @Published private(set) var filteredNews: [News] = []
 }
 

@@ -23,12 +23,12 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         setupTableView()
         setupSearchBar()
 
-//        viewModel.$filteredNews
-//            .receive(on: RunLoop.main)
-//            .sink { [weak self] _ in
-//                self?.tableView.reloadData()
-//            }
-//            .store(in: &cancellables)
+        viewModel.$filteredNews
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in
+                self?.tableView.reloadData()
+            }
+            .store(in: &cancellables)
     }
 
     private func setupTableView() {
@@ -64,8 +64,8 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedNews = viewModel.filteredNews[indexPath.row]
-  //      let detailVC = NewsDetailViewController(viewModel: NewsDetailViewModel(news: selectedNews))
-  //      navigationController?.pushViewController(detailVC, animated: true)
+        let detailVC = NewsDetailViewController(viewModel: NewsDetailViewModel(news: selectedNews))
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
