@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         GMSServices.setMetalRendererEnabled(true)
-        GMSServices.provideAPIKey("AIzaSyD2vfIAMvSw4DlgreHdQgCfgoIp8YDBCw4")
+//removí api key por llamados excesivos 
+        GMSServices.provideAPIKey("")
         return true
     }
 
